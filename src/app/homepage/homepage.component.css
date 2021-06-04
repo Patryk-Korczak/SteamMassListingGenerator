@@ -12,6 +12,12 @@ body {
   height: 100%;
 }
 
+.generate-multi {
+  position: sticky;
+  bottom: 5px;
+  background: greenyellow;
+}
+
 button {
   background-color: #c7d5e0;
 }

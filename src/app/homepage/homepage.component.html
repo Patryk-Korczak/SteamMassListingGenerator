@@ -1,12 +1,14 @@
 <div class="homepage">
-  <mat-grid-list gutterSize="5px" cols="5">
+  <mat-grid-list gutterSize="5px" cols="{{columns}}" rowHeight="{{rowHeight}}">
     <mat-grid-tile *ngFor="let item of Items.Item">
-      <app-item-card class="item" (unselectedEvent)="unselectItem($event)" (selectedEvent)="addSelectedItem($event)"
-        [item]="item">
+      <app-item-card-mobile *ngIf="isMobile()" class="item" (unselectedEvent)="unselectItem($event)"
+        (selectedEvent)="addSelectedItem($event)" [item]="item"></app-item-card-mobile>
+      <app-item-card *ngIf="!isMobile()" class="item" (unselectedEvent)="unselectItem($event)"
+        (selectedEvent)="addSelectedItem($event)" [item]="item">
       </app-item-card>
     </mat-grid-tile>
   </mat-grid-list>
-  <button mat-raised-button (click)="Items.openNewWindow(Items.generateMultiSellLink(Items.returnSelected()))">
+  <button class="generate-multi" mat-raised-button (click)="openNewWindow(generateMultiSellLink())">
     Generate MultiSell Link
   </button>
 </div>

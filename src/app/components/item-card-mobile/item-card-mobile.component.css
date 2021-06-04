@@ -13,13 +13,6 @@
   border: 5px solid #7da10e;
 }
 
-.mat-card-title {
-  height: 10%;
-  color:white;
-  font-size: 14px;
-  position: inherit;
-}
-
 @media all and (max-width: 360px) {
   .mat-card-title {
     height: 2%;
@@ -40,14 +33,14 @@
 
 .mat-card-actions {
   position: absolute;
-  right: 5%;
-  bottom: 5%;
+  right: 1%;
+  bottom: -15%;
   margin-bottom: 0px;
 }
 
-
 button {
   background-color: #c7d5e0;
+  scale: 0.5;
 }
 
 mat-card img{
