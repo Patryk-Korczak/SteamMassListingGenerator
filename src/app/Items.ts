@@ -1,5 +1,4 @@
 class Items {
-  multiSellBaseUrl = 'https://steamcommunity.com/market/multisell?appid=730&contextid=2'
 
   Item = [
     {
@@ -354,50 +353,6 @@ class Items {
     }
   ]
 
-  getSteamLink(id: number) {
-    return (this.Item)[id].steamLink;
-  }
-
-  getSingleSellLink(id:number) {
-    let generatedLink = this.multiSellBaseUrl;
-    generatedLink += (this.Item)[id].multiSell;
-    return generatedLink;
-  }
-
-  generateMultiSellLink(idList: number[]) {
-    let generatedLink = this.multiSellBaseUrl;
-    for (let id of idList) {
-      generatedLink += (this.Item)[id].multiSell;
-    }
-    return generatedLink;
-  }
-
-  openNewWindow(link:string) {
-    window.open(link);
-  }
-
-  selectItem(id: number) {
-    let element = document.getElementById("card["+String(id)+"]");
-    if((this.Item)[id].selected) {
-      (this.Item)[id].selected = false;
-      // @ts-ignore
-      element.setAttribute("style", "border: 0 solid #7da10e");
-    } else {
-      this.Item[id].selected = true;
-      // @ts-ignore
-      element.setAttribute("style", "border: 5px solid #7da10e");
-    }
-  }
-
-  returnSelected() {
-    let selectedItems = new Array<number>()
-    for (let x of this.Item) {
-      if(x.selected) {
-        selectedItems.push(x.id)
-      }
-    }
-    return selectedItems;
-  }
 }
 
 enum Rarity {

@@ -1,0 +1,58 @@
+.mat-card {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  text-align: center;
+  background-color: #2a475e;
+  border: 5px solid #2a475e;
+  margin: auto;
+}
+
+.selected-item {
+  border: 5px solid #7da10e;
+}
+
+.mat-card-title {
+  height: 10%;
+  color:white;
+  font-size: 14px;
+  position: inherit;
+}
+
+@media all and (max-width: 360px) {
+  .mat-card-title {
+    height: 2%;
+    color: white;
+    font-size: 10px;
+    position: inherit;
+  }
+}
+
+.mat-card-content {
+  margin-bottom: 0px;
+}
+
+.mat-card-footer {
+  position: absolute;
+  bottom: 10%;
+}
+
+.mat-card-actions {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  margin-bottom: 0px;
+}
+
+
+button {
+  background-color: #c7d5e0;
+}
+
+mat-card img{
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 50%;
+}
+

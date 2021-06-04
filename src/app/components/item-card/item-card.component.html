@@ -1,0 +1,10 @@
+<mat-card [ngClass]="{'selected-item': selected}" (click)="selectItemEvent()">
+  <mat-card-title>{{item.name}}</mat-card-title>
+  <mat-card-content>
+    <img mat-card-image src="{{item.img}}" alt="{{item.name}}">
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-icon-button (click)="openNewWindow(getSteamLink());$event.stopPropagation()"><mat-icon>open_in_new</mat-icon></button>
+  </mat-card-actions>
+  <mat-card-footer>{{item.rarity}}</mat-card-footer>
+</mat-card>
