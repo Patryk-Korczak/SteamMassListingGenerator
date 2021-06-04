@@ -8,8 +8,8 @@
         <img mat-card-image src="{{item.img}}" alt="{{item.name}}">
       </mat-card-content>
       <mat-card-actions>
-        <button mat-raised-button (click)="Items.openNewWindow(Items.getSingleSellLink(item.id))">MULTISELL</button>
-        <button mat-raised-button (click)="Items.openNewWindow(Items.getSteamLink(item.id));">STEAM</button>
+        <button mat-raised-button (click)="Items.openNewWindow(Items.getSingleSellLink(item.id)); $event.stopPropagation()">MULTISELL</button>
+        <button mat-raised-button (click)="Items.openNewWindow(Items.getSteamLink(item.id));$event.stopPropagation()">STEAM</button>
       </mat-card-actions>
       <mat-card-footer>{{item.rarity}}</mat-card-footer>
     </mat-card>

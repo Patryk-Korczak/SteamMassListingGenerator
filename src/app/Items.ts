@@ -107,7 +107,7 @@ class Items {
       name: 'Chroma 2 Case',
       img: '../assets/chroma2.png',
       steamLink: 'https://steamcommunity.com/market/listings/730/Chroma%202%2020Case',
-      multiSell: '&items%5B%5D=Chroma%20Case',
+      multiSell: '&items%5B%5D=Chroma%202%20Case',
       rarity: Rarity.RARE,
       type: 'case',
       selected: false
