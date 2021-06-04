@@ -1,0 +1,20 @@
+<div class="homepage">
+<mat-grid-list gutterSize="5px" cols="4">
+  <div *ngFor="let item of Items.Item">
+  <mat-grid-tile>
+    <mat-card id="card[{{item.id}}]" (click)="Items.selectItem(item.id)">
+      <mat-card-title>{{item.name}}</mat-card-title>
+      <mat-card-content>
+        <img mat-card-image src="{{item.img}}" alt="{{item.name}}">
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-raised-button (click)="Items.openNewWindow(Items.getSingleSellLink(item.id))">MULTISELL</button>
+        <button mat-raised-button (click)="Items.openNewWindow(Items.getSteamLink(item.id));">STEAM</button>
+      </mat-card-actions>
+      <mat-card-footer>{{item.rarity}}</mat-card-footer>
+    </mat-card>
+  </mat-grid-tile>
+  </div>
+</mat-grid-list>
+  <button mat-raised-button (click)="Items.openNewWindow(Items.generateMultiSellLink(Items.returnSelected()))" >Generate MultiSell Link</button>
+</div>

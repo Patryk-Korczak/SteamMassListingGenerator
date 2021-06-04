@@ -1,0 +1,28 @@
+body {
+  height: 95vh;
+}
+.homepage {
+  padding-top: 5vh;
+  background-color: #171a21;
+  text-align: center;
+}
+
+.mat-card {
+  width: 60%;
+  height: 90%;
+  justify-content: center;
+  text-align: center;
+  background-color: #2a475e;
+  border: 0 solid #7da10e;
+}
+
+button {
+  background-color: #c7d5e0;
+}
+
+mat-card img{
+  object-fit: cover; /*this makes the image in src fit to the size specified below*/
+  width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  height: 80%;
+}
+
