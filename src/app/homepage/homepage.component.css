@@ -1,24 +1,15 @@
 body {
   height: 95vh;
 }
+
 .homepage {
   padding-top: 5vh;
   background-color: #171a21;
   text-align: center;
 }
 
-.mat-card {
-  width: 60%;
-  height: 90%;
-  box-sizing: border-box;
-  justify-content: center;
-  text-align: center;
-  background-color: #2a475e;
-  border: 0 solid #7da10e;
-}
-
-.mat-card-title {
-  height: 10%;
+.item {
+  height: 100%;
 }
 
 button {

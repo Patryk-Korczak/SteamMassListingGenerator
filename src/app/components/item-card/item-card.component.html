@@ -1,0 +1,11 @@
+<mat-card [ngClass]="{'selected-item': selected}" (click)="selectItemEvent()">
+  <mat-card-title>{{item.name}}</mat-card-title>
+  <mat-card-content>
+    <img mat-card-image src="{{item.img}}" alt="{{item.name}}">
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button (click)="openNewWindow(getSingleSellLink()); $event.stopPropagation()">MULTISELL</button>
+    <button mat-raised-button (click)="openNewWindow(getSteamLink());$event.stopPropagation()">STEAM</button>
+  </mat-card-actions>
+  <mat-card-footer>{{item.rarity}}</mat-card-footer>
+</mat-card>
