@@ -12,9 +12,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule} from '@angular/material/icon'
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { ItemCardMobileComponent } from './components/item-card-mobile/item-card-mobile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ChangelogComponent } from './changelog/changelog.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
-  declarations: [AppComponent, HomepageComponent, ItemCardComponent, ItemCardMobileComponent],
+  declarations: [AppComponent, HomepageComponent, ItemCardComponent, ItemCardMobileComponent, ChangelogComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,7 +26,8 @@ import { ItemCardMobileComponent } from './components/item-card-mobile/item-card
     MatGridListModule,
     MatCardModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

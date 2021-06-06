@@ -1,0 +1,12 @@
+.about {
+  padding-top: 6vh;
+  height: 95vh;
+  background-color: #2a475e;
+  text-align: center;
+}
+
+.banners {
+  width: 400px;
+  height: 100px;
+  object-fit: contain;
+}

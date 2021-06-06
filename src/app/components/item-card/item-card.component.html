@@ -4,7 +4,8 @@
     <img mat-card-image src="{{item.img}}" alt="{{item.name}}">
   </mat-card-content>
   <mat-card-actions>
-    <button mat-icon-button (click)="openNewWindow(getSteamLink());$event.stopPropagation()"><mat-icon>open_in_new</mat-icon></button>
+    <button mat-raised-button (click)="openNewWindow(getSingleSellLink());$event.stopPropagation()">SELL</button>
+    <button mat-raised-button (click)="openNewWindow(getSteamLink());$event.stopPropagation()">STEAM</button>
   </mat-card-actions>
   <mat-card-footer>{{item.rarity}}</mat-card-footer>
 </mat-card>

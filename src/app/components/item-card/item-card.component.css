@@ -34,15 +34,13 @@
 }
 
 .mat-card-footer {
-  position: absolute;
-  bottom: 10%;
+  vertical-align: bottom;
+  position: center;
+  color: white;
 }
 
 .mat-card-actions {
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
-  margin-bottom: 0px;
+  position: center;
 }
 
 
